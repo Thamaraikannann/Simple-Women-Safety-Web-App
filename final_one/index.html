@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="She Shield AI — AI-powered women safety app with one-tap SOS alerts, live location sharing, voice-activated emergency triggers, and fake call escape." />
+  <title>She Shield AI — Your Smart Safety Companion</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons 1.11 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-glass fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-shield" href="#home">
+        <i class="bi bi-shield-fill-check"></i>
+        She Shield AI
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacts">Emergency Contacts</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#tips">Safety Tips</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#ai-assistant">AI Assistant</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
+          <li class="nav-item ms-md-2 mt-2 mt-md-0">
+            <a class="btn-sos-trigger btn" href="#sos">
+              <i class="bi bi-exclamation-triangle-fill"></i> SOS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home">
+    <!-- Decorative blurred orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <!-- Subtle dot-grid overlay -->
+    <div class="hero-grid-overlay"></div>
+
+    <div class="container">
+      <div class="row align-items-center g-5 min-vh-100 py-5">
+
+        <!-- LEFT: Text content -->
+        <div class="col-lg-6 hero-content">
+          <!-- Pill badge -->
+          <div class="hero-pill-badge mb-4">
+            <span class="hero-pill-dot"></span>
+            AI-Powered Women Safety Platform
+          </div>
+
+          <h1 class="hero-title mb-3">
+            Protect Every<br>
+            <span class="gradient-text">Woman. Always.</span>
+          </h1>
+
+          <p class="hero-tagline mb-2">She Shield AI — Your Smart Safety Companion</p>
+
+          <p class="hero-desc mb-4">
+            One tap sends your location, alerts your contacts, and connects you to help.
+            Voice-activated, always-on, and built for real emergencies.
+          </p>
+
+          <!-- CTA buttons -->
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#sos" class="btn-sos-trigger btn hero-sos-cta">
+              <i class="bi bi-exclamation-octagon-fill"></i> Trigger SOS Now
+            </a>
+            <a href="#features" class="btn-shield-outline btn">
+              <i class="bi bi-grid-fill"></i> Explore Features
+            </a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="hero-trust-badges">
+            <span class="trust-badge">
+              <i class="bi bi-shield-fill-check" style="color:#00c853;"></i> 12,500+ Protected
+            </span>
+            <span class="trust-badge">
+              <i class="bi bi-geo-alt-fill" style="color:#e91e8c;"></i> Live Location
+            </span>
+            <span class="trust-badge">
+              <i class="bi bi-mic-fill" style="color:#e91e8c;"></i> Voice Activated
+            </span>
+            <span class="trust-badge">
+              <i class="bi bi-cloud-fill" style="color:#1976d2;"></i> AWS Powered
+            </span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Shield visual + mini SOS preview -->
+        <div class="col-lg-6 text-center hero-visual-col">
+          <!-- Outer glow ring -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-visual-ring hero-visual-ring-1"></div>
+            <div class="hero-visual-ring hero-visual-ring-2"></div>
+
+            <!-- Shield badge -->
+            <div class="hero-shield-badge">
+              <i class="bi bi-shield-fill-check"></i>
+            </div>
+
+            <!-- Floating feature chips -->
+            <div class="hero-chip hero-chip-sos">
+              <i class="bi bi-exclamation-octagon-fill"></i> SOS Active
+            </div>
+            <div class="hero-chip hero-chip-loc">
+              <i class="bi bi-geo-alt-fill"></i> Location Shared
+            </div>
+            <div class="hero-chip hero-chip-voice">
+              <i class="bi bi-mic-fill"></i> Voice On
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-hint">
+      <i class="bi bi-chevron-double-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section id="features" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Powerful Safety Features</h2>
+        <div class="section-title-accent"></div>
+        <p class="section-subtitle mt-3">Everything you need to stay safe, all in one intelligent app.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col reveal-card">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">01</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-shield-fill-exclamation"></i></div>
+            <h5 class="feature-card-title">One Tap SOS Alert</h5>
+            <p class="feature-card-desc">Instantly send your location and emergency alert to all saved contacts with a single tap.</p>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.1s">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">02</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-geo-alt-fill"></i></div>
+            <h5 class="feature-card-title">Live Location Sharing</h5>
+            <p class="feature-card-desc">Share your real-time GPS coordinates with trusted contacts so they always know where you are.</p>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.2s">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">03</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-mic-fill"></i></div>
+            <h5 class="feature-card-title">Voice Activated Trigger</h5>
+            <p class="feature-card-desc">Say "help", "save me", or "emergency" to automatically trigger an SOS alert hands-free.</p>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.3s">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">04</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-telephone-inbound-fill"></i></div>
+            <h5 class="feature-card-title">Fake Call Escape</h5>
+            <p class="feature-card-desc">Simulate an incoming call to safely exit uncomfortable or dangerous situations discreetly.</p>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.4s">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">05</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-person-lines-fill"></i></div>
+            <h5 class="feature-card-title">Emergency Contacts</h5>
+            <p class="feature-card-desc">Store and manage trusted contacts who will be notified instantly when you trigger an SOS.</p>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.5s">
+          <div class="glass-card feature-card h-100">
+            <span class="feature-card-num">06</span>
+            <div class="feature-icon-badge mb-3"><i class="bi bi-lightbulb-fill"></i></div>
+            <h5 class="feature-card-title">Safety Tips Assistant</h5>
+            <p class="feature-card-desc">Access curated, expert-backed safety tips to stay prepared and aware in any situation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS / COUNTERS ===== -->
+  <section id="stats" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Our Impact</span>
+        <h2 class="section-title">Trusted by Thousands</h2>
+        <div class="section-title-accent"></div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-3 g-4 justify-content-center">
+        <div class="col reveal-card">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-shield-fill-check"></i></div>
+            <div class="stat-number"><span id="stat-users">0</span>+</div>
+            <div class="stat-label">Users Protected</div>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.15s">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
+            <div class="stat-number"><span id="stat-alerts">0</span>+</div>
+            <div class="stat-label">SOS Alerts Sent</div>
+          </div>
+        </div>
+        <div class="col reveal-card" style="--delay:0.3s">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="stat-number"><span id="stat-cities">0</span>+</div>
+            <div class="stat-label">Cities Covered</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOS EMERGENCY ===== -->
+  <section id="sos" class="section-padding">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="text-center mb-5">
+        <span class="section-label" style="background:rgba(255,23,68,0.18);color:#ff6b6b;border:1px solid rgba(255,23,68,0.3);">
+          <i class="bi bi-exclamation-octagon-fill me-1"></i> Emergency Response
+        </span>
+        <h2 class="section-title text-white mt-3">One Tap. Instant Help.</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.6);">
+          Press the SOS button to instantly share your location and alert all your emergency contacts.
+        </p>
+      </div>
+
+      <!-- SOS button + rings -->
+      <div class="sos-stage">
+        <!-- Outer ambient glow rings -->
+        <div class="sos-ambient-ring sos-ambient-1"></div>
+        <div class="sos-ambient-ring sos-ambient-2"></div>
+        <div class="sos-ambient-ring sos-ambient-3"></div>
+
+        <!-- Pulse rings (CSS animated) -->
+        <div class="sos-ring"></div>
+        <div class="sos-ring"></div>
+        <div class="sos-ring"></div>
+
+        <!-- The button -->
+        <button id="sos-btn" class="sos-btn" aria-label="Trigger SOS Emergency Alert">
+          <i class="bi bi-exclamation-octagon-fill sos-btn-icon"></i>
+          <span class="sos-btn-label">SOS</span>
+          <span class="sos-btn-sub">Tap to Alert</span>
+        </button>
+      </div>
+
+      <!-- Coordinates display -->
+      <p id="sos-coords" class="d-none mx-auto text-center" style="max-width:420px;"></p>
+
+      <!-- Info cards below button -->
+      <div class="row g-3 justify-content-center mt-4" style="max-width:700px;margin-left:auto;margin-right:auto;">
+        <div class="col-4">
+          <div class="sos-info-card">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Location Captured</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="sos-info-card">
+            <i class="bi bi-people-fill"></i>
+            <span>Contacts Alerted</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="sos-info-card">
+            <i class="bi bi-cloud-upload-fill"></i>
+            <span>AWS Notified</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EMERGENCY CONTACTS ===== -->
+  <section id="contacts" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Stay Connected</span>
+        <h2 class="section-title">Emergency Contacts</h2>
+        <p class="section-subtitle">Add trusted people who will be alerted when you trigger SOS.</p>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <div class="contact-form-card">
+            <h5 class="fw-700 mb-4" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">
+              <i class="bi bi-person-plus-fill me-2" style="color:#e91e8c;"></i>Add New Contact
+            </h5>
+            <form id="contact-form" novalidate>
+              <div class="mb-3">
+                <label for="contact-name" class="form-label fw-600 small">Contact Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Priya Sharma" required />
+                <div class="invalid-feedback">Please enter a contact name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="contact-rel" class="form-label fw-600 small">Relationship</label>
+                <input type="text" id="contact-rel" class="form-control" placeholder="e.g. Sister, Friend" required />
+                <div class="invalid-feedback">Please enter the relationship.</div>
+              </div>
+              <div class="mb-4">
+                <label for="contact-phone" class="form-label fw-600 small">Phone Number</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="e.g. +91 98765 43210" required />
+                <div class="invalid-feedback">Please enter a phone number.</div>
+              </div>
+              <button type="submit" class="btn-shield-primary btn w-100">
+                <i class="bi bi-plus-circle-fill"></i> Add Contact
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h5 class="fw-700 mb-3" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">
+            <i class="bi bi-people-fill me-2" style="color:#e91e8c;"></i>Saved Contacts
+          </h5>
+          <div id="contacts-list" class="d-flex flex-column gap-3">
+            <p id="no-contacts-msg" class="text-muted fst-italic small">No contacts saved yet. Add your first contact above.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOICE TRIGGER ===== -->
+  <section id="voice" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Hands-Free Safety</span>
+        <h2 class="section-title">Voice Activated SOS</h2>
+        <p class="section-subtitle">Say a keyword and She Shield AI triggers an emergency alert automatically.</p>
+      </div>
+      <div class="row align-items-center g-5">
+        <!-- Left: visual -->
+        <div class="col-lg-5 text-center reveal-card">
+          <div class="voice-visual">
+            <div class="voice-visual-ring voice-visual-ring-1"></div>
+            <div class="voice-visual-ring voice-visual-ring-2"></div>
+            <div class="voice-visual-ring voice-visual-ring-3"></div>
+            <div id="mic-indicator" class="mic-indicator">
+              <i class="bi bi-mic-fill"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Right: controls -->
+        <div class="col-lg-7 reveal-card" style="--delay:0.15s">
+          <div class="voice-card">
+            <h5 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.3rem;">Voice Detection</h5>
+            <p class="text-muted small mb-4">Speak any trigger word and She Shield AI will instantly activate the SOS flow.</p>
+            <div class="voice-keywords mb-4">
+              <span class="voice-keyword"><i class="bi bi-mic-fill"></i> "help"</span>
+              <span class="voice-keyword"><i class="bi bi-mic-fill"></i> "save me"</span>
+              <span class="voice-keyword"><i class="bi bi-mic-fill"></i> "emergency"</span>
+            </div>
+            <button id="start-voice-btn" class="btn-shield-primary btn">
+              <i class="bi bi-mic-fill"></i> Start Voice Detection
+            </button>
+            <p id="voice-status" class="mt-3"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAKE CALL ===== -->
+  <section id="fakecall" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Escape Safely</span>
+        <h2 class="section-title">Fake Call Feature</h2>
+        <p class="section-subtitle">Simulate an incoming call to exit uncomfortable situations without suspicion.</p>
+      </div>
+      <div class="text-center">
+        <div class="glass-card d-inline-block p-5 text-center" style="max-width:420px;">
+          <div class="feature-icon-badge mx-auto mb-4" style="width:72px;height:72px;font-size:2rem;">
+            <i class="bi bi-telephone-inbound-fill"></i>
+          </div>
+          <h5 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Incoming Fake Call</h5>
+          <p class="text-muted small mb-4">Tap below to simulate a call from "Mom" and escape any situation discreetly.</p>
+          <button id="fake-call-btn" class="btn-shield-primary btn" data-bs-toggle="modal" data-bs-target="#fakeCallModal">
+            <i class="bi bi-telephone-fill"></i> Incoming Fake Call
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAFETY TIPS ===== -->
+  <section id="tips" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Stay Prepared</span>
+        <h2 class="section-title">Safety Tips for Women</h2>
+        <div class="section-title-accent"></div>
+        <p class="section-subtitle mt-3">Expert-backed tips to help you stay aware, confident, and safe every day.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-eye-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Stay Aware of Surroundings</h6>
+            <p class="feature-card-desc">Avoid distractions like headphones in unfamiliar areas. Stay alert and trust your instincts.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-phone-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Keep Phone Charged</h6>
+            <p class="feature-card-desc">Always carry a power bank. A charged phone is your lifeline in emergencies.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-people-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Travel in Groups</h6>
+            <p class="feature-card-desc">Whenever possible, travel with trusted friends or family, especially at night.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-map-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Share Your Route</h6>
+            <p class="feature-card-desc">Always inform someone you trust about your travel plans and expected arrival time.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-lock-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Secure Your Digital Life</h6>
+            <p class="feature-card-desc">Use strong passwords and enable two-factor authentication on all your accounts.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="glass-card tip-card h-100">
+            <div class="tip-icon-badge"><i class="bi bi-bell-fill"></i></div>
+            <h6 class="fw-700 mb-2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Know Emergency Numbers</h6>
+            <p class="feature-card-desc">Memorize local emergency numbers (100, 112, 1091 Women Helpline) and keep them accessible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWS ARCHITECTURE / ABOUT ===== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Cloud Architecture</span>
+        <h2 class="section-title">Powered by AWS</h2>
+        <p class="section-subtitle">She Shield AI is built on a scalable, serverless AWS architecture for real-time emergency response.</p>
+      </div>
+      <div class="arch-flow">
+        <div class="glass-card arch-card reveal-card">
+          <div class="arch-step-num">01</div>
+          <div class="arch-icon-badge"><i class="bi bi-cloud-fill"></i></div>
+          <h6 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Amazon S3</h6>
+          <p class="feature-card-desc">Static frontend hosting with global CDN delivery</p>
+        </div>
+        <div class="arch-arrow d-none d-md-flex">&#8594;</div>
+        <div class="glass-card arch-card reveal-card" style="--delay:0.1s">
+          <div class="arch-step-num">02</div>
+          <div class="arch-icon-badge"><i class="bi bi-diagram-3-fill"></i></div>
+          <h6 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">API Gateway</h6>
+          <p class="feature-card-desc">Secure REST API routing for SOS requests</p>
+        </div>
+        <div class="arch-arrow d-none d-md-flex">&#8594;</div>
+        <div class="glass-card arch-card reveal-card" style="--delay:0.2s">
+          <div class="arch-step-num">03</div>
+          <div class="arch-icon-badge"><i class="bi bi-lightning-fill"></i></div>
+          <h6 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">AWS Lambda</h6>
+          <p class="feature-card-desc">Serverless functions handling SOS business logic</p>
+        </div>
+        <div class="arch-arrow d-none d-md-flex">&#8594;</div>
+        <div class="glass-card arch-card reveal-card" style="--delay:0.3s">
+          <div class="arch-step-num">04</div>
+          <div class="arch-icon-badge"><i class="bi bi-bell-fill"></i></div>
+          <h6 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">Amazon SNS</h6>
+          <p class="feature-card-desc">Instant SMS and email alerts to emergency contacts</p>
+        </div>
+        <div class="arch-arrow d-none d-md-flex">&#8594;</div>
+        <div class="glass-card arch-card reveal-card" style="--delay:0.4s">
+          <div class="arch-step-num">05</div>
+          <div class="arch-icon-badge"><i class="bi bi-database-fill"></i></div>
+          <h6 class="fw-700 mb-1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;">DynamoDB</h6>
+          <p class="feature-card-desc">NoSQL event log and contact storage at scale</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI SAFETY ASSISTANT ===== -->
+  <section id="ai-assistant" class="ai-assistant-section">
+
+    <!-- ── Top hero banner ── -->
+    <div class="ai-hero-banner">
+      <div class="ai-hero-particles">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="container position-relative" style="z-index:2;">
+        <div class="row align-items-center g-5 py-5">
+
+          <!-- Left: headline -->
+          <div class="col-lg-6">
+            <div class="ai-hero-label">
+              <span class="ai-live-dot"></span> Live AI Engine
+            </div>
+            <h2 class="ai-hero-title">
+              She Shield AI<br>
+              <span class="ai-hero-title-accent">Safety Assistant</span>
+            </h2>
+            <p class="ai-hero-desc">
+              Real-time voice intelligence that listens, understands, and acts.
+              No buttons needed — just speak and She Shield AI responds.
+            </p>
+            <!-- Demo mode CTA -->
+            <button id="ai-demo-btn" class="ai-demo-cta">
+              <i class="bi bi-play-circle-fill"></i>
+              Run Live Demo
+              <span class="ai-demo-cta-sub">No mic needed</span>
+            </button>
+          </div>
+
+          <!-- Right: AI brain visual -->
+          <div class="col-lg-6 text-center">
+            <div class="ai-brain-wrapper">
+              <!-- Orbit rings -->
+              <div class="ai-orbit ai-orbit-1"></div>
+              <div class="ai-orbit ai-orbit-2"></div>
+              <div class="ai-orbit ai-orbit-3"></div>
+              <!-- Orbit dots -->
+              <div class="ai-orbit-dot ai-orbit-dot-1"><i class="bi bi-mic-fill"></i></div>
+              <div class="ai-orbit-dot ai-orbit-dot-2"><i class="bi bi-shield-fill-check"></i></div>
+              <div class="ai-orbit-dot ai-orbit-dot-3"><i class="bi bi-geo-alt-fill"></i></div>
+              <!-- Core -->
+              <div class="ai-brain-core" id="ai-brain-core">
+                <i class="bi bi-robot"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Live AI status bar -->
+        <div class="ai-status-bar">
+          <div class="ai-status-item">
+            <span class="ai-status-dot-sm active"></span>
+            <span id="ai-status-engine">Engine Ready</span>
+          </div>
+          <div class="ai-status-divider"></div>
+          <div class="ai-status-item">
+            <i class="bi bi-waveform me-1" style="color:#f48fb1;"></i>
+            <span id="ai-status-mode">Standby</span>
+          </div>
+          <div class="ai-status-divider"></div>
+          <div class="ai-status-item">
+            <i class="bi bi-activity me-1" style="color:#69f0ae;"></i>
+            <span id="ai-status-last">No activity yet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Three feature cards ── -->
+    <div class="container ai-cards-container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Card 1: Voice to Text -->
+        <div class="col-lg-4 reveal-card">
+          <div class="ai-card h-100">
+            <div class="ai-card-header">
+              <div class="ai-icon-badge"><i class="bi bi-mic-fill"></i></div>
+              <div>
+                <span class="ai-card-tag">Feature 01</span>
+                <h5 class="ai-card-title mb-0">Voice to Text</h5>
+              </div>
+            </div>
+            <p class="feature-card-desc mb-4">
+              Tap the mic and speak. Your words appear live — interim results shown as you talk, final text locked in when you pause.
+            </p>
+
+            <!-- Waveform bars (animated while listening) -->
+            <div class="ai-waveform" id="vtt-waveform">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+
+            <!-- Mic button -->
+            <div class="ai-mic-wrapper" id="vtt-mic-wrapper">
+              <div class="ai-mic-ring ai-mic-ring-1"></div>
+              <div class="ai-mic-ring ai-mic-ring-2"></div>
+              <button id="vtt-btn" class="ai-mic-btn" aria-label="Start voice to text">
+                <i class="bi bi-mic-fill" id="vtt-btn-icon"></i>
+              </button>
+            </div>
+
+            <!-- Live transcript -->
+            <div class="ai-transcript-box" id="vtt-transcript" aria-live="polite">
+              <span class="ai-transcript-placeholder">Your speech will appear here…</span>
+            </div>
+
+            <div id="vtt-fallback" class="ai-fallback d-none">
+              <i class="bi bi-exclamation-triangle-fill me-1"></i>
+              Use Chrome or Edge for speech recognition.
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Voice Commands -->
+        <div class="col-lg-4 reveal-card" style="--delay:0.12s">
+          <div class="ai-card h-100">
+            <div class="ai-card-header">
+              <div class="ai-icon-badge ai-icon-badge--purple"><i class="bi bi-lightning-charge-fill"></i></div>
+              <div>
+                <span class="ai-card-tag">Feature 02</span>
+                <h5 class="ai-card-title mb-0">Smart Commands</h5>
+              </div>
+            </div>
+            <p class="feature-card-desc mb-3">
+              Speak a command — the app executes it instantly. No screen tapping required.
+            </p>
+
+            <!-- Interactive command chips — click to simulate -->
+            <p class="ai-chip-hint">Click any command to simulate:</p>
+            <div class="ai-command-chips mb-4">
+              <span class="ai-chip ai-chip-clickable" data-cmd="trigger sos"><i class="bi bi-exclamation-octagon-fill"></i> "trigger sos"</span>
+              <span class="ai-chip ai-chip-clickable" data-cmd="show contacts"><i class="bi bi-people-fill"></i> "show contacts"</span>
+              <span class="ai-chip ai-chip-clickable" data-cmd="fake call"><i class="bi bi-telephone-fill"></i> "fake call"</span>
+              <span class="ai-chip ai-chip-clickable" data-cmd="help"><i class="bi bi-shield-fill-exclamation"></i> "help"</span>
+              <span class="ai-chip ai-chip-clickable" data-cmd="save me"><i class="bi bi-shield-fill-exclamation"></i> "save me"</span>
+              <span class="ai-chip ai-chip-clickable" data-cmd="emergency"><i class="bi bi-shield-fill-exclamation"></i> "emergency"</span>
+            </div>
+
+            <button id="cmd-btn" class="ai-action-btn w-100 mb-2">
+              <i class="bi bi-mic-fill"></i> Start Command Mode
+            </button>
+
+            <div id="cmd-result" class="ai-cmd-result d-none mt-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span id="cmd-result-text"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Danger Detection -->
+        <div class="col-lg-4 reveal-card" style="--delay:0.24s">
+          <div class="ai-card h-100">
+            <div class="ai-card-header">
+              <div class="ai-icon-badge ai-icon-badge--red"><i class="bi bi-shield-fill-exclamation"></i></div>
+              <div>
+                <span class="ai-card-tag">Feature 03</span>
+                <h5 class="ai-card-title mb-0">Danger Detection</h5>
+              </div>
+            </div>
+            <p class="feature-card-desc mb-3">
+              Always-on background listener. Detects danger words and triggers SOS automatically — no action needed.
+            </p>
+
+            <!-- Animated keyword pills -->
+            <div class="ai-danger-keywords mb-3">
+              <span class="ai-danger-chip">help</span>
+              <span class="ai-danger-chip">save me</span>
+              <span class="ai-danger-chip">danger</span>
+              <span class="ai-danger-chip">unsafe</span>
+              <span class="ai-danger-chip">emergency</span>
+            </div>
+
+            <button id="danger-btn" class="ai-action-btn w-100 mb-3">
+              <i class="bi bi-ear-fill"></i> Start Safety Listening
+            </button>
+
+            <!-- Live activity feed -->
+            <div class="ai-activity-feed" id="ai-activity-feed">
+              <div class="ai-activity-empty">No activity yet — start listening to see events here.</div>
+            </div>
+
+            <div id="danger-status" class="ai-danger-status mt-2">
+              <span class="ai-status-dot" id="danger-dot"></span>
+              <span id="danger-status-text">Inactive</span>
+            </div>
+            <div id="danger-detected" class="ai-detected-word d-none mt-2">
+              <i class="bi bi-exclamation-triangle-fill me-1"></i>
+              Detected: <strong id="danger-detected-word"></strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4 text-center text-md-start">
+          <div class="footer-brand mb-1">
+            <i class="bi bi-shield-fill-check me-2"></i>She Shield AI
+          </div>
+          <p class="small" style="color:rgba(255,255,255,0.5);">Your Smart Safety Companion</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="small mb-1" style="color:rgba(255,255,255,0.6);">
+            <i class="bi bi-trophy-fill me-1" style="color:#f48fb1;"></i>
+            College Innovation Challenge 2025
+          </p>
+          <p class="small" style="color:rgba(255,255,255,0.4);">&copy; 2025 She Shield AI. All rights reserved.</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <div class="d-flex justify-content-center justify-content-md-end gap-2">
+            <a href="#" class="footer-social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider mt-4" />
+      <p class="text-center small mt-3" style="color:rgba(255,255,255,0.35);">
+        Built with <i class="bi bi-heart-fill" style="color:#e91e8c;"></i> for Women's Safety &mdash; Powered by AWS Cloud
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== FAKE CALL MODAL ===== -->
+  <div class="modal fade" id="fakeCallModal" tabindex="-1" aria-labelledby="fakeCallModalLabel" aria-modal="true" role="dialog"
+       data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content fake-call-modal-content">
+        <div class="fake-call-avatar-wrapper position-relative d-flex align-items-center justify-content-center mx-auto mt-4">
+          <div class="ring-pulse ring-pulse-1"></div>
+          <div class="ring-pulse ring-pulse-2"></div>
+          <div class="ring-pulse ring-pulse-3"></div>
+          <div class="fake-call-avatar d-flex align-items-center justify-content-center">
+            <i class="bi bi-person-fill text-white fs-1"></i>
+          </div>
+        </div>
+        <div class="modal-body text-center pb-0 pt-3">
+          <h5 id="fakeCallModalLabel" class="fake-call-name fw-bold mb-1">Mom</h5>
+          <p class="fake-call-subtitle mb-4">Mobile &middot; Incoming</p>
+          <div class="d-flex justify-content-center gap-4 pb-4">
+            <button id="accept-call-btn" type="button" class="btn fake-call-btn fake-call-accept">
+              <i class="bi bi-telephone-fill"></i> Accept
+            </button>
+            <button id="reject-call-btn" type="button" class="btn fake-call-btn fake-call-reject">
+              <i class="bi bi-telephone-x-fill"></i> Reject
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST CONTAINER ===== -->
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999"></div>
+
+  <!-- Bootstrap 5.3 JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- App script -->
+  <script src="script.js"></script>
+
+  <!-- ===== CHATBOT ===== -->
+  <!-- Floating trigger button -->
+  <button id="chatbot-trigger" class="chatbot-trigger" aria-label="Open Safety Chatbot">
+    <i class="bi bi-chat-heart-fill" id="chatbot-trigger-icon"></i>
+    <span class="chatbot-trigger-badge" id="chatbot-unread-badge">AI</span>
+  </button>
+
+  <!-- Chatbot panel -->
+  <div id="chatbot-panel" class="chatbot-panel" role="dialog" aria-label="She Shield AI Chatbot" aria-hidden="true">
+
+    <!-- Animated background mesh -->
+    <div class="chatbot-bg-mesh"></div>
+
+    <!-- Header -->
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">
+          <i class="bi bi-shield-fill-check"></i>
+          <span class="chatbot-online-dot"></span>
+        </div>
+        <div>
+          <div class="chatbot-name">She Shield AI</div>
+          <div class="chatbot-status" id="chatbot-status-text">
+            <span class="chatbot-status-dot"></span> Safety Assistant · Always here
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-header-actions">
+        <!-- Language pills -->
+        <div class="chatbot-lang-pills" id="chatbot-lang-pills">
+          <button class="chatbot-lang-pill active" data-lang="en">EN</button>
+          <button class="chatbot-lang-pill" data-lang="hi">हि</button>
+          <button class="chatbot-lang-pill" data-lang="ta">த</button>
+          <button class="chatbot-lang-pill" data-lang="tg">TG</button>
+        </div>
+        <button id="chatbot-close" class="chatbot-close-btn" aria-label="Close chatbot">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Messages area -->
+    <div id="chatbot-messages" class="chatbot-messages" role="log" aria-live="polite"></div>
+
+    <!-- Scenario suggestion chips (shown before first message) -->
+    <div class="chatbot-scenarios" id="chatbot-scenarios">
+      <p class="chatbot-scenarios-label" id="chatbot-scenarios-label">Try asking:</p>
+      <div class="chatbot-scenario-chips" id="chatbot-scenario-chips">
+        <button class="chatbot-scenario-chip" data-msg="I feel unsafe right now">😰 I feel unsafe</button>
+        <button class="chatbot-scenario-chip" data-msg="Someone is following me">👁️ Being followed</button>
+        <button class="chatbot-scenario-chip" data-msg="Safety tips for travelling alone">🌙 Travel safe</button>
+        <button class="chatbot-scenario-chip" data-msg="What are emergency numbers?">📞 Emergency numbers</button>
+        <button class="chatbot-scenario-chip" data-msg="How does She Shield AI work?">🤖 How it works</button>
+      </div>
+    </div>
+
+    <!-- Quick action buttons -->
+    <div class="chatbot-quick-actions" id="chatbot-quick-actions">
+      <button class="chatbot-quick-btn chatbot-quick-sos" data-action="sos">
+        <i class="bi bi-exclamation-octagon-fill"></i>
+        <span class="chatbot-quick-label" data-key="sos">Trigger SOS</span>
+      </button>
+      <button class="chatbot-quick-btn" data-action="tips">
+        <i class="bi bi-lightbulb-fill"></i>
+        <span class="chatbot-quick-label" data-key="tips">Safety Tips</span>
+      </button>
+      <button class="chatbot-quick-btn" data-action="contacts">
+        <i class="bi bi-people-fill"></i>
+        <span class="chatbot-quick-label" data-key="contacts">Contacts</span>
+      </button>
+      <button class="chatbot-quick-btn" data-action="fakecall">
+        <i class="bi bi-telephone-fill"></i>
+        <span class="chatbot-quick-label" data-key="fakecall">Fake Call</span>
+      </button>
+      <button class="chatbot-quick-btn" data-action="advice">
+        <i class="bi bi-shield-fill-check"></i>
+        <span class="chatbot-quick-label" data-key="advice">Safety Advice</span>
+      </button>
+    </div>
+
+    <!-- Input area -->
+    <div class="chatbot-input-area">
+      <button class="chatbot-voice-input-btn" id="chatbot-voice-btn" aria-label="Voice input" title="Voice input">
+        <i class="bi bi-mic-fill"></i>
+      </button>
+      <input id="chatbot-input" type="text" class="chatbot-input"
+             placeholder="Type a message…" autocomplete="off" maxlength="200" />
+      <button id="chatbot-send" class="chatbot-send-btn" aria-label="Send message">
+        <i class="bi bi-send-fill"></i>
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
