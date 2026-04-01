@@ -1,6 +1,6 @@
-# She Shield AI 🚨
+# Simple-Women-Safety-Web-App
 
-She Shield AI is an AI-powered women safety web application designed to provide real-time emergency support using AWS cloud services.
+Simple-Women-Safety-Web-App is an AI-powered women safety web application designed to provide real-time emergency support using AWS cloud services.
 
 ## 🔥 Features
 - One-click SOS alert
@@ -27,6 +27,3 @@ User → S3 Website → API Gateway → Lambda → Response
 - HTML, CSS, JavaScript
 - Bootstrap
 - Kiro AI
-
-## 🙏 Acknowledgment
-Special thanks to Vivek Raja P, S Poobalan P, and S Logesh for their major support in AWS implementation.
